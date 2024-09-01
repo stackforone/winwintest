@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUTHON2.COM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>วินเลขจากหน้าไปหลัง</h1>
+            <h2></h2>
+        </div>
+        <div class="content">
+            <h3>ไปหน้ารวมโปรแกรม</h3>
+            <div class="form-container">
+                <label for="input-number">โปรแกรมวินเลขจากหน้าไปหลัง ป้อนเลขที่ต้องการวิน อย่างน้อย 3 ตัว</label>
+                <input type="text" id="input-number" placeholder="ป้อนเลขที่นี่...">
+                <div>
+                    <input type="checkbox" id="exclude-checkbox">
+                    <label for="exclude-checkbox">ไม่รวมเบิ้ล</label>
+                </div>
+                <div class="buttons">
+                    <button onclick="winNumber()">วินเลข</button>
+                    <button onclick="reverseWinNumber()">วินเลขหน้าไปหลัง</button>
+                    <button onclick="resetForm()">เริ่มใหม่</button>
+                </div>
+            </div>
+            <div id="result" class="result-container">
+                <h4>ผลลัพธ์:</h4>
+                <textarea id="output" readonly></textarea>
+            </div>
+        </div>
+        <div class="footer">
+            <button>วันเลขจากหน้าไปหลัง</button>
+            <button>วันตัวคง</button>
+            <button>ความโน่เเละสถิติ</button>
+            <button>วิธีการดู รหัสผ่าน Supersootr</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
